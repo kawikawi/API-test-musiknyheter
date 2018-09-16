@@ -1,0 +1,52 @@
+.headerbox {
+border-bottom: 2px solid black;
+  margin: 2%;
+  padding: 5%;
+  width: 92%;
+  align-content: center;
+  text-align: center;
+}
+
+
+.header {
+  font-family: monospace;
+  font-size: 55px;
+}
+
+.allNews {
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.news {
+  font-family: sans-serif;
+  background-color: #F8F8FF;
+  border-radius: 30px;
+  width: 600px;
+  height: 600px;
+  margin: 6px;
+  padding: 1%;
+}
+
+img {
+  width: 430px;
+  height: 300px;
+}
+
+h2 {
+  font-size: 20px;
+}
+p {
+  font-size: 14px;
+}
+
+.link {
+  background-color: #F5F5F5;
+    margin: 2%;
+    padding: 2%;
+    width: 18%;
+    align-content: center;
+    text-align: center;
+}
