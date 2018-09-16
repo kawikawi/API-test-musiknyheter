@@ -19,16 +19,28 @@ const recievedNews = (newsdata) => {
 					//Here we create and add html elements to our html file
 					document.querySelector(".allNews").innerHTML +=
             `<div class="news">
-            <h2>${article.title}</h2>
+<h2>${article.title}</h2>
             <img src="${article.urlToImage}"/>
             <p>${article.description}</p>
-    <div class="link"><a href=${article.url}>To article.</a></div>
+<div class="link"><a href=${article.url}>To article.</a></div>
             </div>`
     })
 }
+window.onscroll = function() {myFunction()};
+// Get the header
+var header = document.getElementById("myHeader");
 
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
 
-
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 
 
 //Fetch is a built in function in Javascript, it gets the data from the API and tranforms it into Javascript objects – JSON data.

@@ -2,15 +2,20 @@
 border-bottom: 2px solid black;
   margin: 2%;
   padding: 5%;
-  width: 92%;
+  width: 88%;
   align-content: center;
   text-align: center;
 }
 
-
 .header {
   font-family: monospace;
-  font-size: 55px;
+  font-size: 70px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
 }
 
 .allNews {
@@ -23,30 +28,39 @@ justify-content: center;
 .news {
   font-family: sans-serif;
   background-color: #F8F8FF;
-  border-radius: 30px;
+  border-radius: 15px;
   width: 600px;
-  height: 600px;
+  height: 500px;
   margin: 6px;
   padding: 1%;
+
+}
+
+.sticky + .news {
+  padding-top: 102px;
 }
 
 img {
-  width: 430px;
+  width: 420px;
   height: 300px;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 18px;
 }
 p {
   font-size: 14px;
 }
 
 .link {
-  background-color: #F5F5F5;
+  background-color: #f2f2f2;
+  border-radius: 80px;
+  color: #A9A9A9;
+  text-decoration: none;
     margin: 2%;
-    padding: 2%;
+    padding: 1%;
     width: 18%;
-    align-content: center;
+    align-items: baseline;
     text-align: center;
+
 }
